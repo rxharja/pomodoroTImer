@@ -1,0 +1,125 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lobster', Cursive;
+  overflow: hidden;
+  color: #F6E8EA;
+  background: #22181C;
+}
+
+h1, h2{
+  text-align: center;
+  border-bottom: 1px solid #F6E8EA;
+  width: 40%;
+  margin: 0 auto;
+}
+.rest {
+  postion: absolute;
+  width: 100%;
+  margin: auto 5em;
+}
+.rest p {
+  margin-right: 0px;
+}
+.restButs {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 3em;
+  padding-left: 1em;
+}
+
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.but {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+}
+button{
+  border: none;
+  background-color: white;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+p{
+  font-size: 1.5em;
+  padding: 20px 0px 0px 15px;
+}
+#start{
+  border-radius: 100px;
+  border: 5px solid #F6E8EA;
+  height: 200px;
+  width: 200px;
+  font-family: 'Lobster', cursive;
+  color: #F6E8EA;
+  background: rgb(50,200,0);
+  font-size: 1.5em;
+  -moz-transition: height 0.5s, width 0.5s, font-size 0.5s;
+  -ms-transition: height 0.5s, width 0.5s, font-size 0.5s;
+  -o-transition: height 0.5s, width 0.5s, font-size 0.5s;
+  -webkit-transition: height 0.5s, width 0.5s, font-size 0.5s;
+  transition: height 0.5s, width 0.5s, font-size 0.5s;
+}
+
+.activate {
+  z-index: 1000 !important;
+  width: 120vw !important;
+  height: 110vh !important;
+  font-size: 3em !important;
+}
+
+.arrow,
+.arrow:before {
+  position: absolute;
+
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  -webkit-transform: rotate(135deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #F6E8EA solid;
+  border-bottom: 2px #F6E8EA solid;
+}
+
+.arrow.top {
+  -webkit-transform: rotate(-45deg) !important;
+}
+
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #F6E8EA solid;
+  border-bottom: 1px #F6E8EA solid;
+  animation-duration: 2s;
+  animation-iteration-count: Infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
